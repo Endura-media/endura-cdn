@@ -311,7 +311,7 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 	font-weight: 700;
 	line-height: 1.35;
 }
-.ea-icon-panel__item .ea-icon { margin: 0 auto 12px; background-color: rgba(255, 255, 255, 0.14); }
+.ea-icon-panel__item .ea-icon { display: flex; margin: 0 auto 12px; background-color: rgba(255, 255, 255, 0.14); }
 .ea-icon-panel__item .ea-icon::before { background-color: #FFFFFF; }
 @media (max-width: 900px) { .ea-icon-panel { max-width: 480px; width: 100%; margin: 0 auto; } }
 
