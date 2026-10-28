@@ -417,3 +417,13 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 
 /* FAQ on a tint section: white items so they stand out */
 .ea-section--tint .ea-faq__item { background-color: #FFFFFF; }
+
+/* Mobile hero: everything centered, H1 on 3 clean lines */
+.ea-hero__line { display: inline; }
+@media (max-width: 900px) {
+	.ea-hero__grid > div:first-child { text-align: center; }
+	.ea-hero__pill { margin-left: auto; margin-right: auto; }
+	.ea-hero__line { display: block; }
+	.ea-hero .ea-actions { justify-content: center; }
+	.ea-hero__badges { justify-content: center; }
+}
