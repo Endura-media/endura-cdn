@@ -414,3 +414,6 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 	.ea-split__text > .ea-actions { margin-top: 24px; justify-content: center; }
 	.ea-words .ea-actions { justify-content: center; }
 }
+
+/* FAQ on a tint section: white items so they stand out */
+.ea-section--tint .ea-faq__item { background-color: #FFFFFF; }
