@@ -427,3 +427,8 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 	.ea-hero .ea-actions { justify-content: center; }
 	.ea-hero__badges { justify-content: center; }
 }
+
+/* Swipe gallery (Our Work) */
+.ea-swipe { scrollbar-width: none; }
+.ea-swipe::-webkit-scrollbar { display: none; }
+@media (min-width: 1200px) { .ea-swipe-hint { display: none; } }
