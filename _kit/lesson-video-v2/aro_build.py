@@ -120,14 +120,14 @@ def caption(img, t):
             ws = words[a:b]; break
     if not ws: return
     ws = [dict(w, _d=w.get("disp", w["text"])) for w in ws if w.get("disp", w["text"]) != ""]
-    d = ImageDraw.Draw(img); f = font("b6", 44)
+    d = ImageDraw.Draw(img); f = font("b6", 48)
     txt = [w["_d"] for w in ws]
-    if d.textlength(" ".join(txt), font=f) > 700:
+    if d.textlength(" ".join(txt), font=f) > 780:
         k = (len(txt) + 1) // 2; lines = [txt[:k], txt[k:]]
     else:
         lines = [txt]
     lh = 58; bw = max(d.textlength(" ".join(l), font=f) for l in lines) + 64; bh = lh * len(lines) + 34
-    x0 = SAFE_CX - bw / 2; y0 = 1272
+    x0 = SAFE_CX - bw / 2; y0 = 1335
     glass(img, [x0, y0, x0 + bw, y0 + bh], r=36, fill_a=22, tint=(14, 32, 51))
     ov = Image.new("RGBA", img.size, (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
     od.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], 36, fill=(7, 18, 31, 190))
@@ -313,7 +313,8 @@ def zoomed(img, t, a, amt=0.025, dur=4.0):
 # buttons starts ~x 900), below y 260 (search bar) and above y ~1430 (username + caption).
 # Each scene is still designed on the full 1080x1920 board; its content band (y 150-1430) is scaled
 # into the safe box, and the background stays full-bleed.
-SAFE_X0, SAFE_X1, SAFE_Y0 = 60, 880, 270
+# Blend (Kui, Oct 31): centered like full screen, but ~86% size so it sits in the middle.
+SAFE_X0, SAFE_X1, SAFE_Y0 = 76, 1004, 205
 SAFE_CX = (SAFE_X0 + SAFE_X1) / 2
 BAND = (0, 150, 1080, 1430)
 _SC = (SAFE_X1 - SAFE_X0) / (BAND[2] - BAND[0])
@@ -358,7 +359,7 @@ END_SRC = 26.6
 
 def video(vo=None):
     dur = END_SRC / SPEED
-    out = os.path.join(HERE, "V009_follow-up-quotes_FINAL.mp4" if vo else "V009_preview_novoice.mp4")
+    out = os.path.join(HERE, "V009c_follow-up-quotes_BLEND.mp4" if vo else "V009_preview_novoice.mp4")
     silent = os.path.join(HERE, "_video.mp4")
     p = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                           "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",

@@ -4,4 +4,4 @@
 - Sound kit: ../lesson-video/sfx/.
 - words.json: ElevenLabs Scribe word timings for the Lesson #02 voice.
 - Voice MP3 is NOT stored here on purpose (voice-clone risk). Re-download from the ElevenLabs flow.
-- **TikTok safe zone (Oct 31, after Lesson #02 posted with text under the search bar, button rail and caption):** render() scales every scene into x 60-880, y 270-1242, captions at y 1272 centered on x 470. Every still sheet gets the red TikTok overlay check before Kui approves.
+- **Layout = BLEND (Kui approved Oct 31, 3:52pm):** content centered, ~86% size (box x 76-1004, y 205-1305), captions y ~1335 centered. Full safe zone looked too small; full screen ran under TikTok UI. Every still sheet gets the red TikTok overlay check.
