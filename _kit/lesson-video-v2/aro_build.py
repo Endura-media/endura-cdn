@@ -120,21 +120,21 @@ def caption(img, t):
             ws = words[a:b]; break
     if not ws: return
     ws = [dict(w, _d=w.get("disp", w["text"])) for w in ws if w.get("disp", w["text"]) != ""]
-    d = ImageDraw.Draw(img); f = font("b6", 50)
+    d = ImageDraw.Draw(img); f = font("b6", 44)
     txt = [w["_d"] for w in ws]
-    if d.textlength(" ".join(txt), font=f) > 820:
+    if d.textlength(" ".join(txt), font=f) > 700:
         k = (len(txt) + 1) // 2; lines = [txt[:k], txt[k:]]
     else:
         lines = [txt]
-    lh = 66; bw = max(d.textlength(" ".join(l), font=f) for l in lines) + 72; bh = lh * len(lines) + 40
-    x0 = (W - bw) / 2; y0 = 1440
+    lh = 58; bw = max(d.textlength(" ".join(l), font=f) for l in lines) + 64; bh = lh * len(lines) + 34
+    x0 = SAFE_CX - bw / 2; y0 = 1272
     glass(img, [x0, y0, x0 + bw, y0 + bh], r=36, fill_a=22, tint=(14, 32, 51))
     ov = Image.new("RGBA", img.size, (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
     od.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], 36, fill=(7, 18, 31, 190))
     img.alpha_composite(ov); d = ImageDraw.Draw(img)
     i = 0
     for li, l in enumerate(lines):
-        x = (W - d.textlength(" ".join(l), font=f)) / 2; y = y0 + 20 + li * lh
+        x = SAFE_CX - d.textlength(" ".join(l), font=f) / 2; y = y0 + 17 + li * lh
         for wt in l:
             w = ws[i]; i += 1
             col = GOLD if w["start"] <= t < w["end"] + 0.12 else INK
@@ -309,10 +309,25 @@ def zoomed(img, t, a, amt=0.025, dur=4.0):
     big = img.resize((nw, nh), Image.BILINEAR); l, tp = (nw - W) // 2, (nh - H) // 2
     return big.crop((l, tp, l + W, tp + H))
 
+# TikTok safe zone (1080x1920): keep everything inside x 60-880 (right rail of like/comment/share
+# buttons starts ~x 900), below y 260 (search bar) and above y ~1430 (username + caption).
+# Each scene is still designed on the full 1080x1920 board; its content band (y 150-1430) is scaled
+# into the safe box, and the background stays full-bleed.
+SAFE_X0, SAFE_X1, SAFE_Y0 = 60, 880, 270
+SAFE_CX = (SAFE_X0 + SAFE_X1) / 2
+BAND = (0, 150, 1080, 1430)
+_SC = (SAFE_X1 - SAFE_X0) / (BAND[2] - BAND[0])
+CW, CH = int(BAND[2] * _SC), int((BAND[3] - BAND[1]) * _SC)
+TRANSPARENT = None
 def render(t):
+    global BGIMG, TRANSPARENT
+    if TRANSPARENT is None: TRANSPARENT = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     start, fn = [s for s in SCENES if t >= s[0]][-1]
-    img = zoomed(fn(t), t, start)
-    d = ImageDraw.Draw(img)
+    real = BGIMG; BGIMG = TRANSPARENT
+    try: layer = zoomed(fn(t), t, start)
+    finally: BGIMG = real
+    content = layer.crop(BAND).resize((CW, CH), Image.LANCZOS)
+    img = BGIMG.copy(); img.alpha_composite(content, (SAFE_X0, SAFE_Y0))
     caption(img, t)
     return img.convert("RGB")
 
