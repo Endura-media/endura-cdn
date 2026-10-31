@@ -454,3 +454,13 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 
 /* Phone buttons: no arrow (Oct 31) */
 .ea-btn[href^="tel:"]::after { content: none; }
+
+/* Photo pop-up viewer (Oct 31): tap a photo to see it bigger.
+   Open links use href="/#id" (not "#id") so the theme's smooth-scroll script doesn't block them. */
+.ea-zoom { position: absolute; inset: 0; display: block; cursor: zoom-in; }
+.ea-lightbox { display: none; position: fixed; inset: 0; z-index: 100000; align-items: center; justify-content: center; padding: 24px; background: rgba(13, 21, 48, 0.92); }
+.ea-lightbox:target { display: flex; }
+.ea-lightbox__bg { position: absolute; inset: 0; cursor: zoom-out; }
+.ea-aro .ea-lightbox img { position: relative; display: block; width: auto !important; height: auto !important; max-width: min(1100px, 100%); max-height: 85vh; border-radius: 12px; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5); pointer-events: none; }
+.ea-lightbox__close { position: absolute; top: 14px; right: 20px; z-index: 2; color: #FFFFFF; font-size: 44px; line-height: 1; text-decoration: none; }
+.ea-lightbox__close:hover { color: #5BB8E8; }
