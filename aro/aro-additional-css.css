@@ -450,3 +450,7 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 	cursor: pointer;
 }
 .ea-form-card select:focus, .wpcf7-form select:focus { outline: none; border-color: #5BB8E8; box-shadow: 0 0 0 3px rgba(91, 184, 232, 0.2); }
+
+
+/* Phone buttons: no arrow (Oct 31) */
+.ea-btn[href^="tel:"]::after { content: none; }
