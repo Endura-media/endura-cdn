@@ -1,0 +1,4 @@
+
+/* Spacing: line under a button row (hours note) needs air (Nov 3 2026) */
+.ea-aro .ea-actions + .ea-sub { margin-top: 20px; }
+.ea-aro .ea-iconrows + .ea-actions { margin-top: 36px; }

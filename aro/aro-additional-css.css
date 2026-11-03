@@ -496,3 +496,7 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 /* ---------- Mobile side margins: more breathing room (Nov 3 2026) ---------- */
 @media (max-width: 768px) { .ea-aro .ea-section { padding-left: 28px; padding-right: 28px; } }
 @media (max-width: 960px) { .ea-aro .ea-hero { padding-left: 28px; padding-right: 28px; } }
+
+/* Spacing: line under a button row (hours note) needs air (Nov 3 2026) */
+.ea-aro .ea-actions + .ea-sub { margin-top: 20px; }
+.ea-aro .ea-iconrows + .ea-actions { margin-top: 36px; }
