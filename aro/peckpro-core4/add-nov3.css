@@ -1,0 +1,16 @@
+
+/* ---------- Icon rows: a visual for each paragraph in text-only sections (Nov 3 2026) ---------- */
+.ea-aro .ea-iconrows { display: grid; gap: 14px; margin: 8px 0 24px; text-align: left; }
+.ea-aro .ea-iconrow { display: flex; gap: 18px; align-items: flex-start; background: #FFFFFF; border: 1.5px solid var(--ea-line); border-radius: 14px; padding: 20px 22px; box-shadow: 0 10px 30px rgba(30, 42, 138, 0.06); }
+.ea-aro .ea-iconrow .ea-icon { margin: 0 !important; }
+.ea-aro .ea-iconrow p { margin: 0; font-size: 16px; line-height: 1.65; color: var(--ea-text); }
+.ea-aro .ea-iconrow p strong { color: var(--ea-navy); }
+@media (min-width: 769px) { .ea-aro .ea-iconrows--2 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) {
+	.ea-aro .ea-iconrow { flex-direction: column; gap: 12px; padding: 18px; }
+	.ea-aro .ea-iconrow .ea-icon { width: 48px; height: 48px; }
+}
+
+/* ---------- Mobile side margins: more breathing room (Nov 3 2026) ---------- */
+@media (max-width: 768px) { .ea-aro .ea-section { padding-left: 28px; padding-right: 28px; } }
+@media (max-width: 960px) { .ea-aro .ea-hero { padding-left: 28px; padding-right: 28px; } }
