@@ -476,3 +476,7 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 	.ea-form-card .wpcf7-form p { margin-bottom: 12px; }
 	.ea-form-card textarea { height: 96px; min-height: 96px; }
 }
+
+/* Fix: theme .entry-content ul (disc + padding) beat .ea-checks. Nov 3 2026 */
+.ea-aro .ea-checks { list-style: none; padding-left: 0; }
+.ea-aro .ea-checks li { list-style: none; }
