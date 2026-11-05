@@ -1,0 +1,6 @@
+
+/* Inner pages: theme .entry-content h2/h3 beat our classes (H2 showed 20px). Match the homepage. Tighter section padding. (Kui, Nov 5 2026) */
+.ea-aro h2.ea-h2 { font-size: clamp(32px, 3.5vw, 40px); line-height: 1.12; font-weight: 800; margin-top: 0; }
+.ea-aro h3.ea-h3 { font-size: 20px; line-height: 1.3; font-weight: 800; margin-top: 0; }
+.ea-aro .ea-section { padding-top: 72px; padding-bottom: 72px; }
+@media (max-width: 768px) { .ea-aro .ea-section { padding-top: 48px; padding-bottom: 48px; } .ea-aro h2.ea-h2 { font-size: 30px; } }
