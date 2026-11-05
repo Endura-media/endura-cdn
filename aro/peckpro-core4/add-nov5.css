@@ -1,0 +1,6 @@
+
+/* Desktop splits: photo/panel at the top next to the H2 and sticky while the text scrolls (Kui, Nov 5 2026) */
+@media (min-width: 901px) {
+	.ea-aro .ea-split { align-items: start; }
+	.ea-aro .ea-split > .ea-media, .ea-aro .ea-split > .ea-icon-panel { position: sticky; top: 120px; }
+}

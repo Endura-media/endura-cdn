@@ -500,3 +500,9 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 /* Spacing: line under a button row (hours note) needs air (Nov 3 2026) */
 .ea-aro .ea-actions + .ea-sub { margin-top: 20px; }
 .ea-aro .ea-iconrows + .ea-actions { margin-top: 36px; }
+
+/* Desktop splits: photo/panel at the top next to the H2 and sticky while the text scrolls (Kui, Nov 5 2026) */
+@media (min-width: 901px) {
+	.ea-aro .ea-split { align-items: start; }
+	.ea-aro .ea-split > .ea-media, .ea-aro .ea-split > .ea-icon-panel { position: sticky; top: 120px; }
+}
