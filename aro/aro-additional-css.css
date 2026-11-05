@@ -515,3 +515,4 @@ a.ea-card:hover { border-color: var(--ea-blue); box-shadow: 0 12px 32px rgba(91,
 
 /* Text links inside cards, rows, lists and split text: visible like .ea-text links (SOP: internal links are text, not buttons) Nov 5 2026 */
 .ea-aro .ea-card p a, .ea-aro .ea-iconrow p a, .ea-aro .ea-checks li a, .ea-aro .ea-split__text p a, .ea-aro .ea-sub a { color: var(--ea-blue-2); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.ea-aro .ea-faq__answer a { color: var(--ea-blue-2); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
