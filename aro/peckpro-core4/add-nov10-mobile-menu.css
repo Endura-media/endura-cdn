@@ -1,0 +1,5 @@
+/* ARO Nov 10: mobile menu fix. Tapping Services kept the desktop translateX(-50%) and pushed sub-items off the left edge. */
+@media (max-width: 960px) {
+  .primary-nav__item--has-children:hover .primary-nav__submenu,
+  .primary-nav__item--has-children:focus-within .primary-nav__submenu { transform: none !important; left: auto !important; }
+}
