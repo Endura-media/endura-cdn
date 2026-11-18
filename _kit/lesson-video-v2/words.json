@@ -1,0 +1,371 @@
+[
+{
+"text": "Do",
+"start": 0,
+"end": 0.12
+},
+{
+"text": "you",
+"start": 0.16,
+"end": 0.227
+},
+{
+"text": "follow",
+"start": 0.24,
+"end": 0.52
+},
+{
+"text": "up",
+"start": 0.56,
+"end": 0.72
+},
+{
+"text": "on",
+"start": 0.8,
+"end": 0.92
+},
+{
+"text": "all",
+"start": 0.96,
+"end": 1.2
+},
+{
+"text": "your",
+"start": 1.28,
+"end": 1.36
+},
+{
+"text": "quotes?",
+"start": 1.44,
+"end": 1.84
+},
+{
+"text": "Say",
+"start": 2.24,
+"end": 2.32
+},
+{
+"text": "you",
+"start": 2.4,
+"end": 2.48
+},
+{
+"text": "have",
+"start": 2.56,
+"end": 2.72
+},
+{
+"text": "fourteen",
+"start": 2.8,
+"end": 3.28,
+"disp": "14"
+},
+{
+"text": "sitting",
+"start": 3.36,
+"end": 3.6
+},
+{
+"text": "quiet.",
+"start": 3.68,
+"end": 4.4
+},
+{
+"text": "With",
+"start": 4.48,
+"end": 4.56
+},
+{
+"text": "a",
+"start": 4.6,
+"end": 4.64
+},
+{
+"text": "follow-up",
+"start": 4.72,
+"end": 5.04
+},
+{
+"text": "system,",
+"start": 5.12,
+"end": 5.76
+},
+{
+"text": "if",
+"start": 5.84,
+"end": 5.92
+},
+{
+"text": "just",
+"start": 6,
+"end": 6.16
+},
+{
+"text": "two",
+"start": 6.32,
+"end": 6.48,
+"disp": "2"
+},
+{
+"text": "say",
+"start": 6.56,
+"end": 6.72
+},
+{
+"text": "yes",
+"start": 6.88,
+"end": 7.12
+},
+{
+"text": "at",
+"start": 7.2,
+"end": 7.28
+},
+{
+"text": "four",
+"start": 7.36,
+"end": 8.0,
+"disp": "$400"
+},
+{
+"text": "hundred",
+"start": 7.52,
+"end": 7.68,
+"disp": ""
+},
+{
+"text": "dollars",
+"start": 7.76,
+"end": 8,
+"disp": ""
+},
+{
+"text": "a",
+"start": 8.08,
+"end": 8.12
+},
+{
+"text": "job,",
+"start": 8.16,
+"end": 8.8
+},
+{
+"text": "that's",
+"start": 8.84,
+"end": 9.04
+},
+{
+"text": "eight",
+"start": 9.12,
+"end": 10.48,
+"disp": "$800."
+},
+{
+"text": "hundred",
+"start": 9.28,
+"end": 9.52,
+"disp": ""
+},
+{
+"text": "dollars.",
+"start": 9.6,
+"end": 10.48,
+"disp": ""
+},
+{
+"text": "Zero",
+"start": 10.56,
+"end": 10.88
+},
+{
+"text": "added",
+"start": 11.04,
+"end": 11.28
+},
+{
+"text": "spend.",
+"start": 11.36,
+"end": 12.16
+},
+{
+"text": "Quiet",
+"start": 12.24,
+"end": 12.64
+},
+{
+"text": "doesn't",
+"start": 12.88,
+"end": 13.12
+},
+{
+"text": "mean",
+"start": 13.2,
+"end": 13.36
+},
+{
+"text": "no.",
+"start": 13.44,
+"end": 14
+},
+{
+"text": "My",
+"start": 14.32,
+"end": 14.4
+},
+{
+"text": "own",
+"start": 14.48,
+"end": 14.56
+},
+{
+"text": "business,",
+"start": 14.64,
+"end": 15.28
+},
+{
+"text": "last",
+"start": 15.4,
+"end": 15.52
+},
+{
+"text": "month:",
+"start": 15.6,
+"end": 16.32
+},
+{
+"text": "two",
+"start": 16.4,
+"end": 16.48,
+"disp": "Two"
+},
+{
+"text": "past",
+"start": 16.56,
+"end": 16.8
+},
+{
+"text": "clients",
+"start": 16.88,
+"end": 17.2
+},
+{
+"text": "went",
+"start": 17.28,
+"end": 17.36
+},
+{
+"text": "quiet",
+"start": 17.44,
+"end": 17.76
+},
+{
+"text": "after",
+"start": 17.88,
+"end": 18
+},
+{
+"text": "their",
+"start": 18.08,
+"end": 18.16
+},
+{
+"text": "quotes.",
+"start": 18.24,
+"end": 18.96
+},
+{
+"text": "My",
+"start": 19.04,
+"end": 19.12
+},
+{
+"text": "follow-up",
+"start": 19.24,
+"end": 19.52
+},
+{
+"text": "system",
+"start": 19.68,
+"end": 19.84
+},
+{
+"text": "checked",
+"start": 19.92,
+"end": 20.16
+},
+{
+"text": "in.",
+"start": 20.24,
+"end": 20.6
+},
+{
+"text": "Both",
+"start": 20.8,
+"end": 21.04
+},
+{
+"text": "paid.",
+"start": 21.12,
+"end": 21.92
+},
+{
+"text": "Follow",
+"start": 22.04,
+"end": 22.16
+},
+{
+"text": "up",
+"start": 22.24,
+"end": 22.32
+},
+{
+"text": "with",
+"start": 22.4,
+"end": 22.48
+},
+{
+"text": "the",
+"start": 22.52,
+"end": 22.56
+},
+{
+"text": "leads",
+"start": 22.64,
+"end": 22.8
+},
+{
+"text": "you",
+"start": 22.88,
+"end": 22.96
+},
+{
+"text": "have",
+"start": 23.12,
+"end": 23.36
+},
+{
+"text": "before",
+"start": 23.44,
+"end": 23.84
+},
+{
+"text": "you",
+"start": 23.92,
+"end": 24
+},
+{
+"text": "spend",
+"start": 24.04,
+"end": 24.24
+},
+{
+"text": "on",
+"start": 24.32,
+"end": 24.4
+},
+{
+"text": "more.",
+"start": 24.48,
+"end": 24.96
+}
+]
